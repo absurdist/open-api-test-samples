@@ -20,7 +20,20 @@ paths:
                   - $ref: '#/components/schemas/alpha'
                   - $ref: '#/components/schemas/beta'
 
-
+  /alpha-or-beta-deeper:
+    get:
+      responses:
+        '200':
+          description: 'get a or b'
+          content:
+            application/json:
+              schema:
+                a-or-b:
+                  type: object
+                  schema:
+                    oneOf:
+                      - $ref: '#/components/schemas/alpha'
+                      - $ref: '#/components/schemas/beta'
 components:
   schemas:
     alpha:
