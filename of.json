@@ -23,8 +23,6 @@
                         "content": {
                             "application/json":{
                                 "schema": {"$ref" : "#/definitions/schemas/alpha"}
-                                    }
-                                }
                             }
                         }
                     }
