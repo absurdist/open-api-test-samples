@@ -19,10 +19,48 @@
                 "operationId": "getA",
                 "responses": {
                     "200": {
-                        "description" : "a response",
+                        "description" : "AB response",
                         "content": {
                             "application/json":{
-                                "schema": {"$ref" : "#/definitions/schemas/alpha"}
+                                "schema": {
+                                    "$ref": "#/definitions/schemas/alpha"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/beta": {
+            "get": {
+                "summary" : "getB",
+                "operationId": "getB",
+                "responses": {
+                    "200": {
+                        "description" : "B response",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "$ref": "#/definitions/schemas/beta"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/alphabeta": {
+            "get": {
+                "summary" : "getAB",
+                "operationId": "getAB",
+                "responses": {
+                    "200": {
+                        "description" : "AB response",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "$ref": "#/definitions/schemas/alphabeta"
+                                }
                             }
                         }
                     }
