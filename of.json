@@ -22,12 +22,7 @@
                         "description" : "a response",
                         "content": {
                             "application/json":{
-                                "schema": {
-                                    "type" : "object",
-                                    "properties": {
-                                        "value": {
-                                            "type" : "string"
-                                        }
+                                "schema": {"$ref" : "#/definitions/schemas/alpha"}
                                     }
                                 }
                             }
