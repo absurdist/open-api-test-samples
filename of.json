@@ -8,12 +8,17 @@
     "paths": {
         "/alpha": {
             "get": {
-                "responses":{
-                    "200":{
-                        "content" : {
+                "responses": {
+                    "200": {
+                        "content": {
                             "application/json":{
-                                "schema":{
-                                    "type" : "integer"
+                                "schema": {
+                                    "type" : "object",
+                                    "properties": {
+                                        "value": {
+                                            "type" : "string"
+                                        }
+                                    }
                                 }
                             }
                         }
