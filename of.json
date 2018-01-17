@@ -57,7 +57,15 @@
                         "type" : "string"
                     }
                 }
-            }
+            },
+
+            "alphabeta":{
+                "type": "object",
+                "anyOf": [
+                    {"$ref" : "#/definitions/schemas/alpha"},
+                    {"$ref" : "#/definitions/schemas/beta"}
+                ]
+            } 
         }
     }
 }
