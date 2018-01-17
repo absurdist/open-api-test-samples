@@ -16,7 +16,6 @@ paths:
               schema:
               - $ref: '#/definitions/schemas/alpha'
 
-paths:
   /beta
     get:
       responses:
@@ -26,7 +25,6 @@ paths:
               schema:
               - $ref: '#/definitions/schemas/beta'
 
-paths:
   /alphabeta
     get:
       responses:
