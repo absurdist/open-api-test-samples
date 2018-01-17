@@ -1,0 +1,52 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: pretend
+  license:
+    name: MIT
+servers:
+  - url: http://pretend.api
+  
+paths:
+  /alpha-or-beta:
+    get:
+      responses:
+        '200':
+          description: Updated
+            content:
+              application/json:
+                schema:
+                  anyOf:
+                    - $ref: '#/components/schemas/alpha'
+                    - $ref: '#/components/schemas/beta'
+
+
+components:
+  schemas:
+    alpha:
+      type: object
+      properties: 
+        id: 
+          type: integer
+        objectType:
+          type: string
+          enum: 
+            - 'alpha'
+        name: 
+          type: string
+      required:
+        - id
+        - objectType
+          
+    beta:
+      type: object
+      properties:
+        id:
+          type: string
+        objectType:
+          type: string
+          enum: 
+            - 'beta'
+      required: 
+        - id
+        - objectType
