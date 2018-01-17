@@ -36,5 +36,28 @@
                 }
             }
         }
+    },
+
+    "definitions": {
+        "schemas": {
+
+           "alpha": {
+                "type": "object",
+                "properties": {
+                    "value" : {
+                        "type" : "integer"
+                    }
+                }
+            },
+
+            "beta" : {
+                "type": "object",
+                "properties": {
+                    "value" : {
+                        "type" : "string"
+                    }
+                }
+            }
+        }
     }
 }
