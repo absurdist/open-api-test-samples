@@ -1,13 +1,22 @@
 {
-    "openapi": "3.0.1",
-    "info" : {
-        "version": "0.1.0",
-        "title": "OfTest"
+    "openapi": "3.0.0",
+    "info": {
+        "title": "test",
+        "description": "test",
+        "version": "1.0.0"
     },
 
+    "servers": [
+        {
+            "url": "https://pretend.api",
+            "description": "pretend api"
+        }
+    ],
     "paths": {
         "/alpha": {
             "get": {
+                "summary" : "getA",
+                "operationId": "getA",
                 "responses": {
                     "200": {
                         "content": {
