@@ -19,6 +19,7 @@
                 "operationId": "getA",
                 "responses": {
                     "200": {
+                        "description" : "a response",
                         "content": {
                             "application/json":{
                                 "schema": {
