@@ -12,13 +12,13 @@ paths:
     get:
       responses:
         '200':
-          description: Updated
-            content:
-              application/json:
-                schema:
-                  anyOf:
-                    - $ref: '#/components/schemas/alpha'
-                    - $ref: '#/components/schemas/beta'
+          description: 'get a or b'
+          content:
+            application/json:
+              schema:
+                anyOf:
+                  - $ref: '#/components/schemas/alpha'
+                  - $ref: '#/components/schemas/beta'
 
 
 components:
@@ -47,6 +47,7 @@ components:
           type: string
           enum: 
             - 'beta'
+            
       required: 
         - id
         - objectType
