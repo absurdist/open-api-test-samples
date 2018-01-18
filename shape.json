@@ -1,0 +1,14 @@
+{ 
+	"oneOf": [
+		{
+			"$ref": "#/components/schemas/circle"
+		},
+		{
+			"$ref": "#/components/schemas/square"
+		}
+	],
+	"discriminator": {
+		"propertyName": "objectType"
+	}
+
+}

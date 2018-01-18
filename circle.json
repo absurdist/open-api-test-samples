@@ -1,6 +1,7 @@
 {
 	"type": "object",
 	"properties": {
+		
 	  "objectType": {
 			"type": "string",
 			"enum": [

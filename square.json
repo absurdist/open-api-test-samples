@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+
+        "objectType": {
+            "type": "string",
+            "enum": [
+                "square"
+            ]
+        },
+
+        "id": {
+            "type": "integer"
+        },
+
+        "width": {
+            "type" : "number"
+        }
+    },
+    "required": [
+
+        "objectType",
+        "id",        
+        "width"
+    ]
+}
