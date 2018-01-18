@@ -1,10 +1,10 @@
 { 
 	"oneOf": [
 		{
-			"$ref": "#/components/schemas/circle"
+			"$ref": "circle.json"
 		},
 		{
-			"$ref": "#/components/schemas/square"
+			"$ref": "square.json"
 		}
 	],
 	"discriminator": {

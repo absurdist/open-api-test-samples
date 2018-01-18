@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "shape" :{
+            "$ref" : "./shape.json"
+        }
+    },
+    "example" : {
+        "shape" : {
+            "objectType": "square",
+            "id": 3,
+            "width": 14
+        }
+    }
+}
+
+
+

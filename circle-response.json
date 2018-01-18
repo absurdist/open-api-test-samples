@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "circle" :{
+            "$ref" : "./circle.json"
+        }
+    },
+    "example" : {
+        "circle" : {
+            "objectType": "circle",
+            "id": 1,
+            "radius": 1000
+        }
+    }
+}
