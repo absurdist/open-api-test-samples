@@ -23,7 +23,12 @@
                         "content": {
                             "application/json":{
                                 "schema": {
-                                    "$ref": "shape-schema.json#/definitions/schemas/circle"
+                                    "$ref": "circle.json"
+                                },
+                                "examples" : {
+                                    "circle" : {
+                                        "externalValue": "examples/circle.json"
+                                    }
                                 }
                             }
                         }
@@ -41,7 +46,12 @@
                         "content": {
                             "application/json":{
                                 "schema": {
-                                    "$ref": "shape-schema.json#/definitions/schemas/square"
+                                    "$ref": "square.json"
+                                },
+                                "examples" : {
+                                    "square" : {
+                                        "externalValue": "examples/square.json"
+                                    }
                                 }
                             }
                         }
@@ -59,7 +69,15 @@
                         "content": {
                             "application/json":{
                                 "schema": {
-                                    "$ref": "shape-schema.json#/definitions/schemas/shape"
+                                    "$ref": "shape.json"
+                                },
+                                "examples" : {
+                                    "circle" : {
+                                        "externalValue": "examples/circle.json"
+                                    },
+                                    "square" : {
+                                        "externalValue": "examples/square.json"
+                                    }
                                 }
                             }
                         }
