@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "test",
+        "description": "test",
+        "version": "1.0.0"
+    },
+
+    "servers": [
+        {
+            "url": "https://pretend.api",
+            "description": "pretend api"
+        }
+    ],
+    "paths": {
+        "/circle": {
+            "get": {
+                "summary" : "getCircle",
+                "operationId": "getCircle",
+                "responses": {
+                    "200": {
+                        "description" : "circle response",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "$ref": "./circle.json#"
+                                },
+                                "example" : {
+                                    "circle" : {
+                                        "externalValue": "examples/circle.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/square": {
+            "get": {
+                "summary" : "get square",
+                "operationId": "getSquare",
+                "responses": {
+                    "200": {
+                        "description" : "square response",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "$ref": "square.json"
+                                },
+                                "example" : {
+                                    "square" : {
+                                        "externalValue": "examples/square.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/shape": {
+            "get": {
+                "summary" : "get shape",
+                "operationId": "getShape",
+                "responses": {
+                    "200": {
+                        "description" : "shape response",
+                        "content": {
+                            "application/json":{
+                                "schema": {
+                                    "$ref": "shape.json"
+                                },
+                                "example" : {
+                                    "circle" : {
+                                        "externalValue": "examples/circle.json"
+                                    },
+                                    "square" : {
+                                        "externalValue": "examples/square.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
