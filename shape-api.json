@@ -23,7 +23,7 @@
                         "content": {
                             "application/json":{
                                 "schema": {
-                                    "$ref": "circle.json"
+                                    "$ref": "./circle.json#"
                                 },
                                 "examples" : {
                                     "circle" : {
