@@ -1,0 +1,24 @@
+{
+	"type": "object",
+	"properties": {
+	  "objectType": {
+			"type": "string",
+			"enum": [
+				"circle"
+			]
+		},
+		
+		"id": {
+			"type": "integer"
+		},
+		
+		"radius": {
+			"type" : "number"
+		}
+	},
+	"required": [
+		"id",
+		"objectType",
+		"radius"
+	]
+}

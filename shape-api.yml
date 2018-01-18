@@ -1,0 +1,35 @@
+openapi: "3.0.1"
+info:
+  version: 0.1.0
+  title: OfTest
+
+servers:
+  - url: https://pretend.api
+
+paths:
+  /circle
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+              - $ref: "circle.json"
+
+  /square
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+              - $ref: "shape-schema.json#/definitions/schemas/square"
+
+  /shape
+    get:
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+              - $ref: "shape-schema.json#/definitions/schemas/shape"
